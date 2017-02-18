@@ -12,10 +12,16 @@ import React, { PropTypes } from 'react';
 import s from './styles.css';
 import { title, html } from './index.md';
 import {Layout, Header, HeaderRow, HeaderTabs, Tab, Drawer, Content} from 'react-mdl';
+import InnerContent from '../../components/Layout/InnerContent';
 
 
 class HomePage extends React.Component {
+  constructor(props) {
+         super(props)
+         this.state = { activeTab: 0,
 
+         };
+     }
   static propTypes = {
     articles: PropTypes.array.isRequired,
   };
@@ -26,7 +32,7 @@ class HomePage extends React.Component {
 
   render() {
     return (
-      <div style={{height: '300px', position: 'relative'}}>
+      <div style={{height: '1000px', position: 'relative'}}>
         <Layout fixedHeader fixedTabs>
             <Header>
                 <HeaderRow className={s.titleContainer}>
@@ -34,14 +40,14 @@ class HomePage extends React.Component {
                   Charles Sanford
                   </label>
                 </HeaderRow>
-                <HeaderTabs ripple activeTab={0} onChange={(tabId) => {}}>
+                <HeaderTabs ripple activeTab={0} onChange={(tabId) => this.setState({ activeTab: tabId })}>
                     <Tab>About</Tab>
                     <Tab>Portfolio</Tab>
                     <Tab>Resume</Tab>
                 </HeaderTabs>
             </Header>
             <Content>
-                <div className="page-content">You can add logic to update the content of this container based on the "activeTab" receive in the `onChange` callback.</div>
+              <InnerContent tab = {this.state.activeTab}/>
             </Content>
         </Layout>
     </div>

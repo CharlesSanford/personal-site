@@ -8,6 +8,8 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
+@import "https://fonts.googleapis.com/css?family=Roboto";
+
   .content {
     width: 100%;
    }
@@ -25,4 +27,5 @@
      width: 100%;
      text-align: center;
      font-size: 30pt;
+     font-family: 'Roboto', sans-serif;
    }

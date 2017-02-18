@@ -17,6 +17,8 @@ import {Header, HeaderRow, HeaderTabs, Tab, Drawer, Content} from 'react-mdl';
 
 class Layout extends React.Component {
 
+
+
   static propTypes = {
     className: PropTypes.string,
   };
@@ -31,23 +33,24 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <div style={{height: '300px', position: 'relative'}}>
-        <Layout fixedHeader fixedTabs>
-            <Header>
-                <HeaderRow title="Charles Sanford" />
-                <HeaderTabs ripple activeTab={0} onChange={(tabId) => {}}>
-                    <Tab>About</Tab>
-                    <Tab>Portfolio</Tab>
-                    <Tab>Resume</Tab>
-                </HeaderTabs>
-            </Header>
-            <Drawer title="Charles Sanford" />
-            <Content>
-                <div className="page-content">You can add logic to update the content of this container based on the "activeTab" receive in the `onChange` callback.</div>
-            </Content>
-        </Layout>
-    </div>
-  )}
+      <Layout fixedHeader fixedTabs>
+          <Header>
+              <HeaderRow className={s.titleContainer}>
+                <label className={s.title}>
+                Charles Sanford
+                </label>
+              </HeaderRow>
+              <HeaderTabs ripple activeTab={0} onChange={(tabId) => this.setState({ activeTab: tabId })}>
+                  <Tab>About</Tab>
+                  <Tab>Portfolio</Tab>
+                  <Tab>Resume</Tab>
+              </HeaderTabs>
+          </Header>
+          <Content>
+              <div className="page-content">Yo.</div>
+          </Content>
+      </Layout>
+      )}
 }
 
 export default Layout;
