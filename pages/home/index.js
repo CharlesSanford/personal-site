@@ -21,7 +21,7 @@ class HomePage extends React.Component {
          this.state = { activeTab: 0,
 
          };
-     }
+  }
   static propTypes = {
     articles: PropTypes.array.isRequired,
   };
@@ -32,8 +32,7 @@ class HomePage extends React.Component {
 
   render() {
     return (
-      <div style={{height: '1000px', position: 'relative'}}>
-        <Layout fixedHeader fixedTabs>
+        <Layout className={s.main} fixedHeader fixedTabs>
             <Header>
                 <HeaderRow className={s.titleContainer}>
                   <label className={s.title}>
@@ -50,7 +49,6 @@ class HomePage extends React.Component {
               <InnerContent tab = {this.state.activeTab}/>
             </Content>
         </Layout>
-    </div>
     );
   }
 

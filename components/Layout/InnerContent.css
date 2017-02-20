@@ -1,11 +1,24 @@
 .body {
-  background-image: 'bg.jpg';
+  height: 100%;
+}
+
+.copy {
+  display: block;
+  width: 60%;
+  margin: auto;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 5px #888888;
+  border-radius: 2px;
+  margin-top:20px;
+  text-align: center;
+  border: 1px solid #c2c2c2;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12pt;
+  padding: 15px;
 }
 
 .name {
-  margin-left: 30%;
-  width: 40%;
-  margin-right: 30%;
+  width: 100%;
   padding-top:40px;
   font-size: 36pt;
   font-weight: bold;
@@ -14,9 +27,10 @@
 
 .image {
   margin-top: 30px;
-  margin-left: 30%;
-  margin-right: 30%;
-  width:40%;
+  margin: auto;
+  width: 300px;
+  border: 5px solid #ffffff;
   border-radius: 50%;
-
+  display: block;
+  box-shadow: 5px 5px 5px #888888;
 }

@@ -10,6 +10,12 @@
 
 @import "https://fonts.googleapis.com/css?family=Roboto";
 
+  .main {
+    height: 100%;
+    background-image: url('http://i.imgur.com/LWWeyAL.jpg');
+
+  }
+
   .content {
     width: 100%;
    }

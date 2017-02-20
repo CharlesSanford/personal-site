@@ -33,22 +33,7 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <Layout fixedHeader fixedTabs>
-          <Header>
-              <HeaderRow className={s.titleContainer}>
-                <label className={s.title}>
-                Charles Sanford
-                </label>
-              </HeaderRow>
-              <HeaderTabs ripple activeTab={0} onChange={(tabId) => this.setState({ activeTab: tabId })}>
-                  <Tab>About</Tab>
-                  <Tab>Portfolio</Tab>
-                  <Tab>Resume</Tab>
-              </HeaderTabs>
-          </Header>
-          <Content>
-              <div className="page-content">Yo.</div>
-          </Content>
+      <Layout>
       </Layout>
       )}
 }
