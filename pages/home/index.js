@@ -33,13 +33,13 @@ class HomePage extends React.Component {
   render() {
     return (
         <Layout className={s.main} fixedHeader fixedTabs>
-            <Header>
+            <Header className="mdl-layout__header">
                 <HeaderRow className={s.titleContainer}>
                   <label className={s.title}>
                   Charles Sanford
                   </label>
                 </HeaderRow>
-                <HeaderTabs ripple activeTab={0} onChange={(tabId) => this.setState({ activeTab: tabId })}>
+                <HeaderTabs className="mdl-layout__tab-bar mdl-js-ripple-effect" ripple activeTab={0} onChange={(tabId) => this.setState({ activeTab: tabId })}>
                     <Tab>About</Tab>
                     <Tab>Portfolio</Tab>
                     <Tab>Resume</Tab>

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Mono');
+
+
+@keyframes fadeIn {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.card {
+  display: block;
+  margin: auto;
+  border-radius: 2px;
+  text-align: center;
+  border: 1px solid #c2c2c2;
+  font-size: 12pt;
+  padding: 15px;
+  padding-top: 0px;
+  font-family: 'PT Mono', sans-serif;
+
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+.content-collapsed {
+  max-height: 600px;
+  width: 60%;
+  margin: auto;
+
+  box-shadow: 5px 5px 5px #888888;
+  /*
+  animation-name: expand;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  */
+  transition: max-height 500ms ease;
+
+  background-color: #ffffff;
+}
+
+.content-expanded {
+  max-height:0;
+  width: 60%;
+  box-shadow: 5px 5px 5px #888888;
+  margin: auto;
+  transition: all 500ms ease;
+  /*
+  animation-name: collapse;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  */
+  background-color: #ffffff;
+
+}

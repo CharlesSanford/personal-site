@@ -1,20 +1,60 @@
-.body {
-  height: 100%;
+@import url('https://fonts.googleapis.com/css?family=PT+Mono');
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
 }
 
-.copy {
+@keyframes float {
+	0% {
+		transform: translateY(-2%);
+	}
+  50% {
+    transform: translateY(2%);
+  }
+	100% {
+		transform: translateY(-2%);
+	}
+}
+
+.body {
+  height: 100%;
+  animation-name: slideDown;
+  animation-duration: .5s;
+}
+
+.card {
   display: block;
   width: 60%;
   margin: auto;
   background-color: #ffffff;
   box-shadow: 5px 5px 5px #888888;
   border-radius: 2px;
-  margin-top:20px;
   text-align: center;
   border: 1px solid #c2c2c2;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'PT Mono', sans-serif;
   font-size: 12pt;
   padding: 15px;
+}
+
+.header {
+  display: block;
+  width: 60%;
+  margin: auto;
+  margin-top:20px;
+  background-color: #ffffff;
+  box-shadow: 5px 10px 5px #888888;
+  border-radius: 2px;
+  text-align: center;
+  border: 1px solid #c2c2c2;
+  font-size: 12pt;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .name {
@@ -28,9 +68,13 @@
 .image {
   margin-top: 30px;
   margin: auto;
+  margin-bottom: 20px;
   width: 300px;
   border: 5px solid #ffffff;
   border-radius: 50%;
   display: block;
   box-shadow: 5px 5px 5px #888888;
+  animation-name: float;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }

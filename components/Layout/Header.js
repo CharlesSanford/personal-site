@@ -25,9 +25,9 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
-        <header className="mdl-layout__header">
-          <div className="mdl-layout__header-row">
+      <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs mdl-color--light-blue">
+        <header className="mdl-layout__header mdl-color--light-blue">
+          <div className="mdl-layout__header-row mdl-color--light-blue">
             <span className="mdl-layout-title">Charles Sanford</span>
           </div>
           <div className="mdl-layout__tab-bar mdl-js-ripple-effect">

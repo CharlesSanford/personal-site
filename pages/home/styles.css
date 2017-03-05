@@ -8,7 +8,8 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-@import "https://fonts.googleapis.com/css?family=Roboto";
+@import "https://fonts.googleapis.com/css?family=Patua+One";
+@import "https://fonts.googleapis.com/css?family=Shrikhand";
 
   .main {
     height: 100%;
@@ -32,6 +33,6 @@
    .title {
      width: 100%;
      text-align: center;
-     font-size: 30pt;
-     font-family: 'Roboto', sans-serif;
+     font-size: 32pt;
+     font-family: 'Shrikhand', sans-serif;
    }
