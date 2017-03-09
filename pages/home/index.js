@@ -11,16 +11,14 @@
 import React, { PropTypes } from 'react';
 import s from './styles.css';
 import { title, html } from './index.md';
-import {Layout, Header, HeaderRow, HeaderTabs, Tab, Drawer, Content} from 'react-mdl';
+import {Layout, Header, HeaderRow, Content} from 'react-mdl';
 import InnerContent from '../../components/Layout/InnerContent';
 
 
 class HomePage extends React.Component {
   constructor(props) {
          super(props)
-         this.state = { activeTab: 0,
-
-         };
+         this.state = {};
   }
   static propTypes = {
     articles: PropTypes.array.isRequired,
@@ -32,22 +30,15 @@ class HomePage extends React.Component {
 
   render() {
     return (
-        <Layout className={s.main} fixedHeader fixedTabs>
+        <Layout className={s.main} fixedHeader>
             <Header className="mdl-layout__header">
                 <HeaderRow className={s.titleContainer}>
                   <label className={s.title}>
                   Charles Sanford
                   </label>
                 </HeaderRow>
-                <HeaderTabs className="mdl-layout__tab-bar mdl-js-ripple-effect" ripple activeTab={0} onChange={(tabId) => this.setState({ activeTab: tabId })}>
-                    <Tab>About</Tab>
-                    <Tab>Portfolio</Tab>
-                    <Tab>Resume</Tab>
-                </HeaderTabs>
             </Header>
-            <Content>
-              <InnerContent tab = {this.state.activeTab}/>
-            </Content>
+              <InnerContent/>
         </Layout>
     );
   }
