@@ -5,11 +5,14 @@
     100% {opacity: 1;}
 }
 
-.card {
+.flex {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+}
+
+.card {
   margin: auto;
   border-radius: 2px;
   text-align: center;
@@ -18,77 +21,39 @@
   font-size: 12pt;
   padding: 15px;
   padding-top: 0px;
-  animation-name: fadeIn;
-  animation-duration: 1s;
 }
 
-.content-collapsed {
-  max-height: 600px;
-  width: 60%;
-  margin: auto;
-
-  box-shadow: 5px 5px 5px #888888;
-  /*
-  animation-name: expand;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  */
-  transition: max-height 500ms ease;
-
-  background-color: #ffffff;
-}
-
-.content-expanded {
-  max-height:0;
-  width: 60%;
-  box-shadow: 5px 5px 5px #888888;
-  margin: auto;
-  transition: all 500ms ease;
-  /*
-  animation-name: collapse;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  */
-  background-color: #ffffff;
-
-}
-
-.image1 {
-  width: 100%;
-  height: auto;
-}
-.image2 {
-  width: 100%;
-  height: auto;
-}
-.image3 {
+.image {
   width: 100%;
   height: auto;
 }
 
 .imageBox1 {
-  width: 33%;
+  width: 25%;
   overflow: hidden;
-  padding: 15px;
   margin: auto;
   animation-name: fadeIn;
   animation-duration: 1s;
 
 }
 .imageBox2 {
-  width: 33%;
-  padding: 15px;
+  width: 25%;
   margin: auto;
   overflow: hidden;
   animation-name: fadeIn;
-  animation-duration: 1.5s;
+  animation-duration: 1.33s;
 }
 .imageBox3 {
-  width: 33%;
+  width: 25%;
   overflow: hidden;
-  padding: 15px;
   margin: auto;
-
+  animation-name: fadeIn;
+  animation-duration: 1.66s;
+}
+.imageBox4 {
+  width: 25%;
+  overflow: hidden;
+  margin: auto;
   animation-name: fadeIn;
   animation-duration: 2s;
 }

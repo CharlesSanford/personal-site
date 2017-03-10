@@ -12,11 +12,9 @@ var cx = classNames.bind(s)
 class MasterDetailButton extends React.Component {
 
   constructor(props) {
-       super(props)
-       this.state = { buttonSelected: false,
-
-       };
-       this.handleClick = this.handleClick.bind(this);
+    super(props)
+    this.state = {buttonSelected: false};
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {
@@ -27,16 +25,16 @@ class MasterDetailButton extends React.Component {
     var contentClass = cx({
         'content-collapsed': this.state.buttonSelected,
         'content-expanded': !this.state.buttonSelected
-      })
+    })
 
     if (this.state.buttonSelected == false) {
       return (
         <div>
-        <Button ripple raised primary className={s.button} onClick= {this.handleClick}>
-        <h2><b>{this.props.title}</b></h2>
-        </Button>
-        <div className={contentClass}>
-        </div>
+          <Button ripple raised primary className={s.button} onClick= {this.handleClick}>
+            <h2><b>{this.props.title}</b></h2>
+          </Button>
+          <div className={contentClass}>
+          </div>
         </div>
       )
     } else {
@@ -47,7 +45,7 @@ class MasterDetailButton extends React.Component {
               <h2><b>{this.props.title}</b></h2>
             </Button>
             <div className={contentClass}>
-            <ExperienceContent/>
+              <ExperienceContent/>
             </div>
           </div>
         )
@@ -59,7 +57,7 @@ class MasterDetailButton extends React.Component {
               <h2><b>{this.props.title}</b></h2>
             </Button>
             <div className={contentClass}>
-            <EducationContent/>
+              <EducationContent/>
             </div>
           </div>
         )
@@ -71,13 +69,12 @@ class MasterDetailButton extends React.Component {
               <h2><b>{this.props.title}</b></h2>
             </Button>
             <div className={contentClass}>
-            <SkillsContent/>
+              <SkillsContent/>
             </div>
           </div>
         )
       }
     }
-
   }
-  }
-  export default MasterDetailButton;
+}
+export default MasterDetailButton;

@@ -38,7 +38,7 @@ class HomePage extends React.Component {
                   </label>
                 </HeaderRow>
             </Header>
-              <InnerContent/>
+            <InnerContent/>
         </Layout>
     );
   }

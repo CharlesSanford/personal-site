@@ -9,32 +9,27 @@ var cx = classNames.bind(s)
 class EducationContent extends React.Component {
 
  render () {
-   var contentClass = cx({
-       'content-collapsed': this.props.buttonSelected,
-       'content-expanded': !this.props.buttonSelected
-     })
-
-     return(
-   <div>
-   <div className = {s.card}>
-       <h4><b><i>Vanderbilt University</i>
-        <br/>
-       2012-2016
-     </b></h4>
-       Graduated in 4 years with a degree in Neuroscience
-       <br/>
-       Worked as Managing Editor of Vanderbilt's satire paper <i>The Slant</i> and completely revitalized its aging aesthetic
-   </div>
-   <div className = {s.card}>
-       <h4><b><i>Vero Beach High School</i>
-       <br/>
-     2008-2012
-   </b></h4>
- Trivia Team, Yearbook, Debate Club, Top Ten
- <br/>
-   </div>
-   </div>
- )
+   return(
+     <div>
+       <div className = {s.card}>
+         <h4><b><i>Vanderbilt University</i></b></h4>
+         <b>2012-2016</b>
+         <br/>
+         <br/>
+         Graduated in 4 years with a degree in Neuroscience
+         <br/>
+         Worked as Managing Editor of Vanderbilt's satire paper <i>The Slant</i> and completely revitalized its aging aesthetic
+       </div>
+       <div className = {s.card}>
+         <h4><b><i>Vero Beach High School</i></b></h4>
+         <b>2008-2012</b>
+         <br/>
+         <br/>
+         Trivia Team, Yearbook, Debate Club, Top Ten
+         <br/>
+       </div>
+     </div>
+  )
  }
 }
 export default EducationContent;
