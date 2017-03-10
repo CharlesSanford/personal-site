@@ -13,9 +13,9 @@ class ExperienceContent extends React.Component {
        <br/>
        Consulted on style, created and edited icons in Photoshop.
        <br/>
-       Created components and refined style in the Android application using Android Studio, Java and XML.
+       Created components and refined style in the Android application using Android Studio.
        <br/>
-       Fixed bugs and added new features to the iOS application using X Code, Objective C and Swift.
+       Fixed bugs and added new features to the iOS application using X Code.
        <br/>
        Created and styled an inhouse web chat client using ReactJS.
     </div>
@@ -28,7 +28,7 @@ class ExperienceContent extends React.Component {
        <br/>
        Read through and dissected several relevant research papers.
        <br/>
-       Learned from mandatory classes and first hand experience a good deal of animal handling technique.
+       Learned from classes and first hand experience a good deal of animal handling techniques.
     </div>
     <div className = {s.card}>
        <h4><b>Technology Consultant - <i>Self-Employed</i></b></h4>
@@ -44,7 +44,7 @@ class ExperienceContent extends React.Component {
        <b>May 2013 - August 2013 </b>&#40;4mos&#41;
        <br/>
        <br/>
-       Upgraded and adjusted various software systems to increase productivity and improve systems stability.
+       Upgraded and modified software systems to increase productivity and improve stability.
        <br/>
        Created a new website complete with a new logo with a modern, flat design aesthetic.
     </div>
