@@ -31,13 +31,11 @@ class HomePage extends React.Component {
   render() {
     return (
         <Layout className={s.main} fixedHeader>
-            <Header className="mdl-layout__header">
-                <HeaderRow className={s.titleContainer}>
+            <header className={s.header}>
                   <label className={s.title}>
                   Charles Sanford
                   </label>
-                </HeaderRow>
-            </Header>
+            </header>
             <InnerContent/>
         </Layout>
     );

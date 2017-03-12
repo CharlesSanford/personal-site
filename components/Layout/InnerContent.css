@@ -27,14 +27,16 @@
 	margin: auto;
   animation-name: slideDown;
   animation-duration: .5s;
+	padding-bottom: 50px;
 }
 
 .card {
   display: block;
 	box-sizing: border-box;
   margin: auto;
+	margin-bottom: 20px;
   background-color: #ffffff;
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
   border-radius: 2px;
   text-align: center;
   border: 1px solid #c2c2c2;
@@ -42,21 +44,6 @@
   font-size: 12pt;
 	padding: 15px;
 	width: 100%;
-}
-
-.header {
-  display: block;
-  width: 60%;
-  margin: auto;
-  margin-top:20px;
-  background-color: #ffffff;
-  border-radius: 2px;
-  text-align: center;
-  border: 1px solid #c2c2c2;
-  font-size: 12pt;
-  font-family: 'Roboto', sans-serif;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .name {
@@ -75,7 +62,7 @@
   border: 3px solid #ffffff;
   border-radius: 50%;
   display: block;
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
   animation-name: float;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -84,5 +71,11 @@
 @media screen and (max-width: 1000px) {
   .body {
 		width: 90%;
+	}
+}
+
+@media screen and (max-width: 344px) {
+  .image {
+		width: 100%;
 	}
 }
