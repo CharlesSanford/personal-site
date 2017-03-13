@@ -31,7 +31,7 @@ class MasterDetailButton extends React.Component {
       return (
         <div>
           <Button ripple raised primary className={s.button} onClick= {this.handleClick}>
-            <h2><b>{this.props.title}</b></h2>
+            <h3><b>{this.props.title}</b></h3>
           </Button>
           <div className={contentClass}>
           </div>
@@ -42,7 +42,7 @@ class MasterDetailButton extends React.Component {
         return (
           <div>
             <Button ripple raised primary className={s.selectedButton} onClick= {this.handleClick}>
-              <h2><b>{this.props.title}</b></h2>
+              <h3><b>{this.props.title}</b></h3>
             </Button>
             <div className={contentClass}>
               <ExperienceContent/>
@@ -54,7 +54,7 @@ class MasterDetailButton extends React.Component {
         return (
           <div>
             <Button ripple raised primary className={s.selectedButton} onClick= {this.handleClick}>
-              <h2><b>{this.props.title}</b></h2>
+              <h3><b>{this.props.title}</b></h3>
             </Button>
             <div className={contentClass}>
               <EducationContent/>
@@ -66,7 +66,7 @@ class MasterDetailButton extends React.Component {
         return (
           <div>
             <Button ripple raised primary className={s.selectedButton} onClick= {this.handleClick}>
-              <h2><b>{this.props.title}</b></h2>
+              <h3><b>{this.props.title}</b></h3>
             </Button>
             <div className={contentClass}>
               <SkillsContent/>
