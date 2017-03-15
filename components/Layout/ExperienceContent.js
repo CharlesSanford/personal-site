@@ -20,8 +20,8 @@ class ExperienceContent extends React.Component {
        <div className = {s.contentContainer}>
          <ul>
            <li>Consulted on style, created and edited icons in Photoshop.</li>
-           <li>Created components and refined style in the Android application using Android Studio.</li>
-           <li>Fixed bugs and added new features to the iOS application using X Code.</li>
+           <li>Created components and refined style in the Android application.</li>
+           <li>Fixed bugs and added new features to the iOS application.</li>
            <li>Created and styled an inhouse web chat client using ReactJS.</li>
          </ul>
        </div>
@@ -59,7 +59,7 @@ class ExperienceContent extends React.Component {
        <div className = {s.contentContainer}>
          <ul>
            <li>Fixed computer problems and arranged preventative measures for end users.</li>
-           <li>Gave copious advice on hardware and software choices.</li>
+           <li>Gave advice to clients on hardware and software choices.</li>
          </ul>
        </div>
     </div>

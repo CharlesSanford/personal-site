@@ -44,6 +44,7 @@
   font-size: 12pt;
 	padding: 15px;
 	width: 100%;
+	word-wrap: break-word;
 }
 
 .name {

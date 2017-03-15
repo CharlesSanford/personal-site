@@ -19,7 +19,7 @@ class EducationContent extends React.Component {
            <div className = {s.contentContainer}>
              <ul>
                <li>Graduated in 4 years with a degree in Neuroscience.</li>
-               <li>Worked as Managing Editor of Vanderbilt's satire paper <i>The Slant</i> and completely revitalized its aging aesthetic.</li>
+               <li>Worked as Managing Editor of Vanderbilt's satire paper <i>The Slant</i> and renovated its outdated design.</li>
              </ul>
            </div>
        </div>
